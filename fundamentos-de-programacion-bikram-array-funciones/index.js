@@ -32,13 +32,27 @@ function esPrimo(n){
 function obtenerImpares(arr){
     let lenghtArr = arr.length;
     let myArr = [];
-    let pruebaPush;
     for(let i=0; i<lenghtArr; i++){
         if(arr[i]%2!=0){
-            pruebaPush=arr[i];
-            myArr.push(pruebaPush);
+            myArr.push(arr[i]);
         }
     }
     return myArr;
 
+}
+function sumarArray(arr){
+    let lenghtArr = arr.length;
+    let sumArray=0;
+    for(let i=0; i<lenghtArr; i++){
+        sumArray+=arr[i];
+    }
+    return sumArray;
+}
+function multiplicarArray(arr){
+    let lenghtArr = arr.length;
+    let mulArray = arr[0];
+    for(let i=1; i<lenghtArr; i++){
+        mulArray*=arr[i];
+    }
+    return mulArray;
 }
