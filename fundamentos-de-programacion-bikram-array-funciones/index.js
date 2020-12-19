@@ -29,3 +29,16 @@ function esPrimo(n){
     }
     return true;
 }
+function obtenerImpares(arr){
+    let lenghtArr = arr.length;
+    let myArr = [];
+    let pruebaPush;
+    for(let i=0; i<lenghtArr; i++){
+        if(arr[i]%2!=0){
+            pruebaPush=arr[i];
+            myArr.push(pruebaPush);
+        }
+    }
+    return myArr;
+
+}
