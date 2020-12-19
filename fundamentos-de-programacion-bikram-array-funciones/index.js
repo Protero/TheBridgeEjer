@@ -10,3 +10,22 @@ function potenciacion(n1,n2){
     }
     return (n1);
 }
+
+function repetirString(s,n){
+    let m=s;
+    for (let i = 1; i < n; i++){
+        m+=s
+    }
+    return (m);
+}
+
+function esPrimo(n){
+    let i=2;
+    while(i<n){
+        if(n%i==0){
+            return false;
+        }
+        i++;
+    }
+    return true;
+}
