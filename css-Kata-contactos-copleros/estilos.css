@@ -1,0 +1,46 @@
+/*
+**Le pongo color de fondo azul
+**dejo especio a la izquierda
+*/
+body {
+    margin-left: 30%;
+    background-color: #5B9EED;
+}
+/*
+**Creo el <ul> como elemento flex
+**El flex lo pongo en columna, por lo que los <li> aparecerann como lista
+**Le doy un anchoara crear la cuadrícula
+**Fondo blanco
+*/
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: white;
+}
+/*
+**Los items de la lista los gestiono como contenedor Flex para jugar con el orden de los elementos visuales y posicionarlos horizontalmente
+**
+*/
+li {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    border-bottom: 1px solid grey;
+    padding: 5%;
+    margin-right: 5%;
+}
+/*
+**Redondeo las imagenes
+**Modifico el orden de la imagen para que visualemente se muestre antes del <h> y la <p>
+*/
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    order: -1;
+}
+/*Separo la imagen del texto*/
+.espacio{
+    margin-left: 2%;
+}
